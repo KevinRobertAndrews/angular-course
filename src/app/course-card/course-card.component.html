@@ -1,5 +1,6 @@
 <div class="course-card">
-    <h2 class="course-title">{{ course.title }}</h2>
+    <h2 class="course-title">{{ course.description }}</h2>
     <img class="course-image" [src]="course.iconUrl" alt="Angular Logo" width="300">
-    <p class="course-title">{{ course.description }}</p>
+    <p class="course-title">{{ course.longDescription }}</p>
+    <button (click)="viewCourse()">View Course</button>
 </div>
