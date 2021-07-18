@@ -11,7 +11,7 @@ export function saveCourse(req: Request, res: Response) {
 
     const course = findCourseById(id);
 
-    course.description = changes.description;
+    course.title = changes.title;
 
     res.status(200).json(course);
 
